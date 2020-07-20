@@ -9,6 +9,8 @@ import IconTreasure from "assets/images/icons/icon-treasure.svg";
 import Button from "elements/Button";
 import { numberFormat } from "utils/helpers";
 export default function Hero(props) {
+  const { data } = props;
+
   function showMostPicked() {
     window.scrollTo({
       top: props.refMostPicked.current.offsetTop - 30,
@@ -46,10 +48,10 @@ export default function Hero(props) {
                 width="36"
                 height="36"
                 src={IconTraveler}
-                alt={`Travelers ${props.data.travelers}`}
+                alt={`Travelers ${data.travelers}`}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.travelers)}
+                {numberFormat(data.travelers)}
                 <span className="text-gray-500 font-weight-light">
                   &nbsp;travelers
                 </span>
@@ -60,10 +62,10 @@ export default function Hero(props) {
                 width="36"
                 height="36"
                 src={IconTreasure}
-                alt={`Treasures ${props.data.treasures}`}
+                alt={`Treasures ${data.treasures}`}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.treasures)}
+                {numberFormat(data.treasures)}
                 <span className="text-gray-500 font-weight-light">
                   &nbsp;treasures
                 </span>
@@ -74,10 +76,10 @@ export default function Hero(props) {
                 width="36"
                 height="36"
                 src={IconCities}
-                alt={`Cities ${props.data.cities}`}
+                alt={`Cities ${data.cities}`}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.cities)}
+                {numberFormat(data.cities)}
                 <span className="text-gray-500 font-weight-light">
                   &nbsp;cities
                 </span>
