@@ -28,49 +28,49 @@
       "_id": "asd1293uasdads1",
       "qty": "3",
       "name": "bedroom",
-      "imageUrl": "/images/icon-bedroom.svg"
+      "imageUrl": "/icons/icon-bedroom.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "living room",
-      "imageUrl": "/images/icon-livingroom.svg"
+      "imageUrl": "/icons/icon-livingroom.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "2",
       "name": "bath room",
-      "imageUrl": "/images/icon-bathroom.svg"
+      "imageUrl": "/icons/icon-bathroom.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "dining room",
-      "imageUrl": "/images/icon-diningroom.svg"
+      "imageUrl": "/icons/icon-diningroom.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "10",
       "name": "mbps",
-      "imageUrl": "/images/icon-wifi.svg"
+      "imageUrl": "/icons/icon-wifi.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "2",
       "name": "units ready",
-      "imageUrl": "/images/icon-airconditioner.svg"
+      "imageUrl": "/icons/icon-airconditioner.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "2",
       "name": "refrigerator",
-      "imageUrl": "/images/icon-refrigerator.svg"
+      "imageUrl": "/icons/icon-refrigerator.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "television",
-      "imageUrl": "/images/icon-tv.svg"
+      "imageUrl": "/icons/icon-tv.svg"
     }
   ],
   "activities": [
