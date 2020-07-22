@@ -15,7 +15,7 @@ export default function InputNumber(props) {
     suffix,
     isSuffixPlural,
   } = props;
-  const [inputValue, setInputValue] = useState(`${prefix} ${value} ${suffix}`);
+  const [inputValue, setInputValue] = useState(`${prefix}${value}${suffix}`);
   const regExrNumber = "[0-9]*";
 
   const onChange = (e) => {
@@ -34,7 +34,9 @@ export default function InputNumber(props) {
         },
       });
       setInputValue(
-        `${prefix} ${value} ${suffix}${isSuffixPlural && value > 1 ? "s" : ""}`
+        `${prefix ? prefix + " " : ""}${value}${suffix ? " " + suffix : ""}${
+          isSuffixPlural && value > 1 ? "s" : ""
+        }`
       );
     }
   };
