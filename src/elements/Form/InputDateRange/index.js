@@ -5,7 +5,6 @@ import { DateRange } from "react-date-range";
 import "./index.scss";
 import "react-date-range/dist/styles.css"; // Main CSS file
 import "react-date-range/dist/theme/default.css"; // Theme CSS file
-import iconCalendar from "assets/images/icons/icon-calendar.svg";
 import { dateFormat } from "utils/helpers";
 
 export default function InputDateRange(props) {
@@ -48,7 +47,7 @@ export default function InputDateRange(props) {
       <div className="input-group">
         <div className="input-group-prepend bg-gray-900">
           <span className="input-group-text">
-            <img src={iconCalendar} alt="Icon Calendar" />
+            <img src="icons/icon-calendar.svg" alt="Icon Calendar" />
           </span>
         </div>
         <input
