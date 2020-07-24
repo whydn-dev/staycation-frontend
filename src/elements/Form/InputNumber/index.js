@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import propTypes from "prop-types";
 
 import "./index.scss";
@@ -15,31 +15,17 @@ export default function InputNumber(props) {
     suffix,
     isSuffixPlural,
   } = props;
-  const [inputValue, setInputValue] = useState(
-    `${prefix ? prefix + " " : ""}${value}${suffix ? " " + suffix : ""}`
-  );
-  const regExrNumber = "[0-9]*";
 
   const onChange = (e) => {
     let value = String(e.target.value);
-    if (prefix) value = value.replace(prefix);
-    if (suffix) value = value.replace(suffix);
 
-    const patternNumeric = new RegExp(regExrNumber);
-    const isNumeric = patternNumeric.test(value);
-
-    if (isNumeric && +value <= max && +value >= min) {
+    if (+value <= max && +value >= min) {
       props.onChange({
         target: {
           name: name,
           value: +value,
         },
       });
-      setInputValue(
-        `${prefix ? prefix + " " : ""}${value}${suffix ? " " + suffix : ""}${
-          isSuffixPlural && value > 1 ? "s" : ""
-        }`
-      );
     }
   };
 
@@ -75,10 +61,12 @@ export default function InputNumber(props) {
           className="form-control"
           min={min}
           max={max}
+          readOnly
           name={name}
-          pattern={regExrNumber}
           placeholder={placeholder ? placeholder : "0"}
-          value={String(inputValue)}
+          value={`${prefix ? prefix + " " : ""}${value}${
+            suffix ? " " + suffix : ""
+          }${isSuffixPlural && value > 1 ? "s" : ""}`}
           onChange={onChange}
         />
         <div className="input-group-append">
