@@ -5,11 +5,14 @@
   margin-bottom: $breadcrumb-margin-bottom;
   @include font-size($breadcrumb-font-size);
   list-style: none;
-  background-color: $breadcrumb-bg;
   @include border-radius($breadcrumb-border-radius);
 }
 
 .breadcrumb-item {
+  a {
+    color: $gray-400
+  }
+
   display: flex;
 
   // The separator between breadcrumbs (by default, a forward-slash: "/")
@@ -39,6 +42,6 @@
   }
 
   &.active {
-    color: $breadcrumb-active-color;
+    color: $gray-900;
   }
 }
