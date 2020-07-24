@@ -15,7 +15,9 @@ export default function InputNumber(props) {
     suffix,
     isSuffixPlural,
   } = props;
-  const [inputValue, setInputValue] = useState(`${prefix}${value}${suffix}`);
+  const [inputValue, setInputValue] = useState(
+    `${prefix ? prefix + " " : ""}${value}${suffix ? " " + suffix : ""}`
+  );
   const regExrNumber = "[0-9]*";
 
   const onChange = (e) => {
