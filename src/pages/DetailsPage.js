@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 import ItemDetails from "json/itemDetails.json";
 import Header from "parts/Header";
-import { Title, FeaturedImages, Description } from "parts/pageDetails";
+import { Title, FeaturedImages, Description } from "parts/PageDetails";
 import BookingForm from "parts/BookingForm";
 import Categories from "parts/Categories";
 import Testimony from "parts/Testimony";
