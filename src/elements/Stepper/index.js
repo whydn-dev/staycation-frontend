@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import propTypes from "prop-types";
 
 export default function Stepper(props) {
-  const { steps, initialStep } = this.props;
+  const { steps, initialStep } = props;
   const stepKeys = Object.keys(steps);
   const [CurrentStep, setCurrentStep] = useState(
     stepKeys.indexOf(initialStep) > -1 ? initialStep : stepKeys[0]
@@ -24,6 +24,6 @@ export default function Stepper(props) {
 }
 
 Stepper.propTypes = {
-  data: propTypes.object.isRequired,
+  steps: propTypes.object.isRequired,
   initialStep: propTypes.string,
 };
